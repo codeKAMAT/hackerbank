@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="3" time="6.627">
+  <testsuite name="Banking Transactions &lt;App/&gt;" errors="0" failures="3" skipped="0" timestamp="2021-05-24T19:46:32" time="4.712" tests="5">
+    <testcase classname="Banking Transactions &lt;App/&gt; check default/initial state of the application" name="Banking Transactions &lt;App/&gt; check default/initial state of the application" time="0.054">
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check filter by date" name="Banking Transactions &lt;App/&gt; check filter by date" time="0.082">
+      <failure>TypeError: Cannot read property &apos;value&apos; of null
+    at filter (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:15:56)
+    at Array.filter (&lt;anonymous&gt;)
+    at sort (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:13:14)
+    at onClick (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:33:47)
+    at HTMLUnknownElement.callCallback (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:306:25)
+    at executeDispatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:389:3)
+    at executeDispatchesInOrder (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:414:5)
+    at executeDispatchesAndRelease (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3278:5)
+    at executeDispatchesAndReleaseTopLevel (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3287:10)
+    at forEachAccumulated (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3259:8)
+    at runEventsInBatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3304:3)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1410:7
+    at Object.batchedUpdates$1 [as unstable_batchedUpdates] (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at eventFn (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1406:14)
+    at fn (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:483:11)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:347:37
+    at batchedUpdates$1 (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at Object.act (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at wrapAct (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:347:13)
+    at Object.simulateEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:482:9)
+    at ReactWrapper.call (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:666:22)
+    at ReactWrapper.single (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:1168:21)
+    at ReactWrapper.simulate (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:665:17)
+    at Object.&lt;anonymous&gt; (/Users/apantbr.ibm.com/Downloads/hackerBank/src/test/App.test.js:24:28)
+    at Object.asyncJestTest (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check sorting by amount" name="Banking Transactions &lt;App/&gt; check sorting by amount" time="0.027">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:0000232343Credit1000$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 33375894749Credit1985.4$12,234.452019-11-30CREDIT CARD PAYMENT ID: 222349083Debit1987$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 0000987945787897987987Debit2450.45$12,234.45&quot;
+Received: &quot;2019-11-25HACKERBANK DES:DEBIT O ID: 0000987945787897987987Debit2450.45$12,234.452019-11-30CREDIT CARD PAYMENT ID: 222349083Debit1987$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 33375894749Credit1985.4$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:0000232343Credit1000$12,234.452019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.45&quot;
+    at Object.&lt;anonymous&gt; (/Users/apantbr.ibm.com/Downloads/hackerBank/src/test/App.test.js:34:42)
+    at Object.asyncJestTest (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check filter by date and sorting by amount" name="Banking Transactions &lt;App/&gt; check filter by date and sorting by amount" time="0.01">
+      <failure>TypeError: Cannot read property &apos;value&apos; of null
+    at filter (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:15:56)
+    at Array.filter (&lt;anonymous&gt;)
+    at sort (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:13:14)
+    at onClick (/Users/apantbr.ibm.com/Downloads/hackerBank/src/components/TransactionTable.js:33:47)
+    at HTMLUnknownElement.callCallback (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:306:25)
+    at executeDispatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:389:3)
+    at executeDispatchesInOrder (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:414:5)
+    at executeDispatchesAndRelease (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3278:5)
+    at executeDispatchesAndReleaseTopLevel (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3287:10)
+    at forEachAccumulated (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3259:8)
+    at runEventsInBatch (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:3304:3)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1410:7
+    at Object.batchedUpdates$1 [as unstable_batchedUpdates] (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at eventFn (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1406:14)
+    at fn (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:483:11)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:347:37
+    at batchedUpdates$1 (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at Object.act (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at wrapAct (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:347:13)
+    at Object.simulateEvent (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:482:9)
+    at ReactWrapper.call (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:666:22)
+    at ReactWrapper.single (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:1168:21)
+    at ReactWrapper.simulate (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/enzyme/src/ReactWrapper.js:665:17)
+    at Object.&lt;anonymous&gt; (/Users/apantbr.ibm.com/Downloads/hackerBank/src/test/App.test.js:46:28)
+    at Object.asyncJestTest (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/apantbr.ibm.com/Downloads/hackerBank/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check number of rows rendered" name="Banking Transactions &lt;App/&gt; check number of rows rendered" time="0.007">
+    </testcase>
+  </testsuite>
+</testsuites>
